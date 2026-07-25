@@ -52,5 +52,19 @@
 
 </div>
 <!-- HACKATIME:START -->
+📡 **my hackatime stats from the last week**
+
+💾 **Languages:**
+```text
+JSON            0 hrs 0 mins     ███████████████████░  93.75%
+Python          0 hrs 0 mins     █░░░░░░░░░░░░░░░░░░░   6.25%
+```
+
+💼 **Projects:**
+```text
+Optivators      0 hrs 4 mins     ████████████████████ 100.00%
+```
+
+**Total:** 0 hrs 5 mins
 <!-- HACKATIME:END -->
 <br>
