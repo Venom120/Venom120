@@ -50,7 +50,11 @@
   #### 🕒 Language & Activity Stats
   <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=15520&api_domain=hackatime.hackclub.com&theme=shadow_red&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8" alt="Hackatime Stats" />
 
-    {{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
 </div>
 
-<br/>
+<br>
+📡 my [hackatime]("https://hackati.me/Venom120") stats from the last week
+
+💾 Languages:
+
+💼 Projects:
