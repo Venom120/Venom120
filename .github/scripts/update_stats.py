@@ -2,21 +2,25 @@ import os
 import requests
 
 def fetch_hackatime_stats():
-    # Updated API endpoint for Hackatime using user ID 15520
-    api_url = os.environ.get("HACKATIME_API_URL", "https://hackatime.hackclub.com/api/v1/users/15520/stats")
-    
-    # Hackatime API for public stats typically doesn't require a Bearer token, 
-    # but we can leave the header optional or include it if needed.
-    headers = {}
     api_key = os.environ.get("HACKATIME_API_KEY")
-    if api_key:
-        headers["Authorization"] = f"Bearer {api_key}"
+    if not api_key:
+        raise ValueError("HACKATIME_API_KEY environment variable is not set. Please add it to your repository secrets.")
+        
+    # Updated API endpoint appending the API key as a query parameter
+    api_url = f"https://hackatime.hackclub.com/api/hackatime/v1/users/current/stats/last_7_days?api_key={api_key}"
+    
+    # Passing the API key in the Authorization header as well
+    headers = {
+        "Authorization": f"Bearer {api_key}"
+    }
         
     response = requests.get(api_url, headers=headers)
     response.raise_for_status()
+    
+    # Based on the JSON schema, the data we need is inside the top-level "data" object
     return response.json().get("data", {})
 
-def make_bar(percent, width=15):
+def make_bar(percent, width=20):
     filled = int(round(width * percent / 100))
     return "█" * filled + "░" * (width - filled)
 
@@ -28,24 +32,28 @@ def generate_markdown(data):
     output = []
     output.append("📡 **my hackatime stats from the last week**\n")
 
-    output.append("💾 Languages:")
+    # Using fenced code blocks (```text) forces proper line breaks and monospaced alignment
+    output.append("💾 **Languages:**")
+    output.append("```text")
     for lang in languages[:5]:
-        name = lang.get("name")
-        time_str = lang.get("text")
-        percent = lang.get("percent")
+        name = lang.get("name", "Unknown")
+        time_str = lang.get("text", "0 hrs 0 mins")
+        percent = lang.get("percent", 0.0)
         bar = make_bar(percent)
-        output.append(f"`{name:<12} {time_str:<12} {bar} {percent:6.2f}%`")
+        # Formatted spacing: 15 chars for name, 16 for time, then the bar and percentage
+        output.append(f"{name:<15} {time_str:<16} {bar} {percent:6.2f}%")
+    output.append("```\n")
     
-    output.append("")
-    output.append("💼 Projects:")
+    output.append("💼 **Projects:**")
+    output.append("```text")
     for proj in projects[:5]:
-        name = proj.get("name")
-        time_str = proj.get("text")
-        percent = proj.get("percent")
+        name = proj.get("name", "Unknown")
+        time_str = proj.get("text", "0 hrs 0 mins")
+        percent = proj.get("percent", 0.0)
         bar = make_bar(percent)
-        output.append(f"`{name:<15} {time_str:<12} {bar} {percent:6.2f}%`")
+        output.append(f"{name:<15} {time_str:<16} {bar} {percent:6.2f}%")
+    output.append("```\n")
 
-    output.append("")
     output.append(f"**Total:** {total_text}")
     return "\n".join(output)
 
@@ -54,6 +62,12 @@ def update_readme():
     new_stats_content = generate_markdown(data)
 
     readme_path = "README.md"
+    
+    # Check if README.md exists, if not, create it (helpful for initial setup)
+    if not os.path.exists(readme_path):
+        with open(readme_path, "w", encoding="utf-8") as f:
+            f.write("<!-- HACKATIME:START -->\n<!-- HACKATIME:END -->\n")
+
     with open(readme_path, "r", encoding="utf-8") as f:
         readme = f.read()
 
