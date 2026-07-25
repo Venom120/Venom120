@@ -53,5 +53,6 @@
 </div>
 
 <br>
+📡 my [hackatime]("https://hackati.me/Venom120") stats from the last week
 
-{{ wakatimeDoubleCategoryBar "Languages:" wakatimeData.Languages "Projects:" wakatimeData.Projects 5 }}
+{{ wakatimeDoubleCategoryBar "💾 Languages:" wakatimeData.Languages "💼 Projects:" wakatimeData.Projects 5 }}
