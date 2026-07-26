@@ -52,20 +52,26 @@
 
 </div>
 <!-- HACKATIME:START -->
-📡 **my hackatime stats from the last week**
+#### 📡 **My Hackatime stats (All Time)**
 
 💾 **Languages:**
 ```text
-INI             0 hrs 2 mins     █████████████░░░░░░░  67.04%
-JSON            0 hrs 0 mins     ██████░░░░░░░░░░░░░░  32.40%
-Python          0 hrs 0 mins     ░░░░░░░░░░░░░░░░░░░░   0.56%
+Python          158h 37m         ███████░░░░░░░░░░░░░  33.49%
+TypeScript      126h 17m         █████░░░░░░░░░░░░░░░  26.66%
+Other           48h 45m          ██░░░░░░░░░░░░░░░░░░  10.29%
+Liquid          47h 58m          ██░░░░░░░░░░░░░░░░░░  10.13%
+JavaScript      43h 46m          ██░░░░░░░░░░░░░░░░░░   9.24%
 ```
 
 💼 **Projects:**
 ```text
-Optivators      0 hrs 5 mins     ████████████████████ 100.00%
+geonavi1        152 hrs 15 mins  ██████░░░░░░░░░░░░░░  31.04%
+Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░  10.06%
+rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   9.87%
+frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   6.95%
+GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░░░░░░   3.86%
 ```
 
-**Total:** 0 hrs 5 mins
+**Total:** 473h 42m 43s
 <!-- HACKATIME:END -->
 <br>
