@@ -24,9 +24,6 @@ jobs:
         run: pip install requests
 
       - name: Run Python Script
-        env:
-          HACKATIME_API_KEY: ${{ secrets.HACKATIME_API_KEY }}
-          HACKATIME_API_URL: ${{ secrets.HACKATIME_API_URL }} # Optional if using custom self-hosted Hackatime endpoint
         run: python .github/scripts/update_stats.py
 
       - name: Commit and Push Changes

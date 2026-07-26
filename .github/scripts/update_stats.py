@@ -1,72 +1,115 @@
 import os
 import requests
 
-def fetch_hackatime_stats():
-    api_key = os.environ.get("HACKATIME_API_KEY")
-    if not api_key:
-        raise ValueError("HACKATIME_API_KEY environment variable is not set. Please add it to your repository secrets.")
-        
-    # Updated API endpoint appending the API key as a query parameter
-    api_url = f"https://hackatime.hackclub.com/api/hackatime/v1/users/current/stats/last_7_days?api_key={api_key}"
-    
-    # Passing the API key in the Authorization header as well
-    headers = {
-        "Authorization": f"Bearer {api_key}"
-    }
-        
-    response = requests.get(api_url, headers=headers)
+USERNAME = "Venom120"
+
+LANGUAGES_API = f"https://hackatime.hackclub.com/api/v1/users/{USERNAME}/stats"
+PROJECTS_API = (
+    f"https://hackatime.hackclub.com/api/v1/users/{USERNAME}/projects/details"
+)
+
+
+def fetch_languages():
+    """Fetch language statistics from Hackatime."""
+    response = requests.get(LANGUAGES_API, timeout=30)
     response.raise_for_status()
-    
-    # Based on the JSON schema, the data we need is inside the top-level "data" object
-    return response.json().get("data", {})
+    return response.json()["data"]
+
+
+def fetch_projects():
+    """Fetch project statistics from Hackatime."""
+    response = requests.get(PROJECTS_API, timeout=30)
+    response.raise_for_status()
+    return response.json()["projects"]
+
 
 def make_bar(percent, width=20):
-    filled = int(round(width * percent / 100))
+    filled = round(width * percent / 100)
     return "█" * filled + "░" * (width - filled)
 
-def generate_markdown(data):
-    languages = data.get("languages", [])
-    projects = data.get("projects", [])
-    total_text = data.get("human_readable_total", "0 hrs 0 mins")
+
+def format_duration(seconds):
+    """Convert seconds into 'X hrs Y mins'."""
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+
+    if hours == 0:
+        return f"{minutes} mins"
+
+    return f"{hours} hrs {minutes} mins"
+
+
+def generate_markdown(language_data, projects):
+    languages = language_data["languages"]
+    total_text = language_data["human_readable_total"]
+
+    # Sort projects by coding time
+    projects = sorted(
+        projects,
+        key=lambda x: x["total_seconds"],
+        reverse=True,
+    )
+
+    total_project_seconds = sum(p["total_seconds"] for p in projects)
 
     output = []
-    output.append("📡 **my hackatime stats from the last week**\n")
 
-    # Using fenced code blocks (```text) forces proper line breaks and monospaced alignment
+    output.append("#### 📡 **My Hackatime stats (All Time)**\n")
+
+    # ---------------- Languages ----------------
+
     output.append("💾 **Languages:**")
     output.append("```text")
+
     for lang in languages[:5]:
-        name = lang.get("name", "Unknown")
-        time_str = lang.get("text", "0 hrs 0 mins")
-        percent = lang.get("percent", 0.0)
-        bar = make_bar(percent)
-        # Formatted spacing: 15 chars for name, 16 for time, then the bar and percentage
-        output.append(f"{name:<15} {time_str:<16} {bar} {percent:6.2f}%")
-    output.append("```\n")
-    
+        name = lang["name"]
+        time_str = lang["text"]
+        percent = lang["percent"]
+
+        output.append(
+            f"{name:<15} {time_str:<16} {make_bar(percent)} {percent:6.2f}%"
+        )
+
+    output.append("```")
+    output.append("")
+
+    # ---------------- Projects ----------------
+
     output.append("💼 **Projects:**")
     output.append("```text")
-    for proj in projects[:5]:
-        name = proj.get("name", "Unknown")
-        time_str = proj.get("text", "0 hrs 0 mins")
-        percent = proj.get("percent", 0.0)
-        bar = make_bar(percent)
-        output.append(f"{name:<15} {time_str:<16} {bar} {percent:6.2f}%")
-    output.append("```\n")
 
+    for project in projects[:5]:
+        percent = (
+            project["total_seconds"] * 100 / total_project_seconds
+            if total_project_seconds
+            else 0
+        )
+
+        output.append(
+            f"{project['name']:<15} "
+            f"{format_duration(project['total_seconds']):<16} "
+            f"{make_bar(percent)} "
+            f"{percent:6.2f}%"
+        )
+
+    output.append("```")
+    output.append("")
     output.append(f"**Total:** {total_text}")
+
     return "\n".join(output)
 
+
 def update_readme():
-    data = fetch_hackatime_stats()
-    new_stats_content = generate_markdown(data)
+    language_data = fetch_languages()
+    projects = fetch_projects()
+
+    new_stats = generate_markdown(language_data, projects)
 
     readme_path = "README.md"
-    
-    # Check if README.md exists, if not, create it (helpful for initial setup)
+
     if not os.path.exists(readme_path):
         with open(readme_path, "w", encoding="utf-8") as f:
-            f.write("<!-- HACKATIME:START -->\n<!-- HACKATIME:END -->\n")
+            f.write("<!-- HACKATIME:START -->\n<!-- HACKATIME:END -->")
 
     with open(readme_path, "r", encoding="utf-8") as f:
         readme = f.read()
@@ -75,14 +118,27 @@ def update_readme():
     end_tag = "<!-- HACKATIME:END -->"
 
     if start_tag in readme and end_tag in readme:
-        start_idx = readme.index(start_tag) + len(start_tag)
-        end_idx = readme.index(end_tag)
-        updated_readme = readme[:start_idx] + "\n" + new_stats_content + "\n" + readme[end_idx:]
+        start_index = readme.index(start_tag) + len(start_tag)
+        end_index = readme.index(end_tag)
+
+        updated = (
+            readme[:start_index]
+            + "\n"
+            + new_stats
+            + "\n"
+            + readme[end_index:]
+        )
     else:
-        updated_readme = readme + f"\n\n{start_tag}\n{new_stats_content}\n{end_tag}\n"
+        updated = (
+            readme
+            + f"\n\n{start_tag}\n"
+            + new_stats
+            + f"\n{end_tag}\n"
+        )
 
     with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(updated_readme)
+        f.write(updated)
+
 
 if __name__ == "__main__":
     update_readme()
