@@ -3,8 +3,8 @@ import requests
 
 USERNAME = "Venom120"
 
-LANGUAGES_API = f"https://hackatime.hackclub.com/api/v1/users/{USERNAME}/stats"
-PROJECTS_API = (
+LANGUAGES_API = str(f"https://hackatime.hackclub.com/api/v1/users/{USERNAME}/stats")
+PROJECTS_API = str(
     f"https://hackatime.hackclub.com/api/v1/users/{USERNAME}/projects/details"
 )
 
@@ -54,7 +54,7 @@ def generate_markdown(language_data, projects):
 
     output = []
 
-    output.append("#### 📡 **My Hackatime stats (All Time)**\n")
+    output.append("### 📡 **My Hackatime stats (All Time)**\n")
 
     # ---------------- Languages ----------------
 

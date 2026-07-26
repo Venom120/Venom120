@@ -53,28 +53,30 @@
 </div>
 
 <div>
+
+
 <!-- HACKATIME:START -->
-#### 📡 **My Hackatime stats (All Time)**
+  ### 📡 **My Hackatime stats (All Time)**
 
-💾 **Languages:**
-```text
-Python          158h 37m         ███████░░░░░░░░░░░░░  33.49%
-TypeScript      126h 17m         █████░░░░░░░░░░░░░░░  26.66%
-Other           48h 45m          ██░░░░░░░░░░░░░░░░░░  10.29%
-Liquid          47h 58m          ██░░░░░░░░░░░░░░░░░░  10.13%
-JavaScript      43h 46m          ██░░░░░░░░░░░░░░░░░░   9.24%
-```
+  💾 **Languages:**
+  ```text
+  Python          158h 50m         ███████░░░░░░░░░░░░░  33.51%
+  TypeScript      126h 17m         █████░░░░░░░░░░░░░░░  26.65%
+  Other           48h 45m          ██░░░░░░░░░░░░░░░░░░  10.29%
+  Liquid          47h 58m          ██░░░░░░░░░░░░░░░░░░  10.12%
+  JavaScript      43h 46m          ██░░░░░░░░░░░░░░░░░░   9.24%
+  ```
 
-💼 **Projects:**
-```text
-geonavi1        152 hrs 15 mins  ██████░░░░░░░░░░░░░░  31.04%
-Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░  10.06%
-rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   9.87%
-frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   6.95%
-GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░░░░░░   3.86%
-```
+  💼 **Projects:**
+  ```text
+  geonavi1        152 hrs 15 mins  ██████░░░░░░░░░░░░░░  31.02%
+  Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░  10.06%
+  rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   9.86%
+  frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   6.95%
+  GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░░░░░░   3.86%
+  ```
 
-**Total:** 473h 42m 43s
+  **Total:** 473h 57m 19s
 <!-- HACKATIME:END -->
+
 </div>
-<br>
