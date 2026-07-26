@@ -51,6 +51,8 @@
   <img src="https://github-readme-stats.hackclub.dev/api/wakatime?username=15520&api_domain=hackatime.hackclub.com&theme=shadow_red&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8" alt="Hackatime Stats" />
 
 </div>
+
+<div>
 <!-- HACKATIME:START -->
 #### 📡 **My Hackatime stats (All Time)**
 
@@ -74,4 +76,5 @@ GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░�
 
 **Total:** 473h 42m 43s
 <!-- HACKATIME:END -->
+</div>
 <br>
