@@ -60,23 +60,23 @@
 
 💾 **Languages:**
 ```text
-Python          169h 33m         ███████░░░░░░░░░░░░░  34.65%
-TypeScript      126h 57m         █████░░░░░░░░░░░░░░░  25.95%
-Other           52h 16m          ██░░░░░░░░░░░░░░░░░░  10.68%
-Liquid          47h 58m          ██░░░░░░░░░░░░░░░░░░   9.80%
-JavaScript      43h 46m          ██░░░░░░░░░░░░░░░░░░   8.95%
+Python          172h 29m         ███████░░░░░░░░░░░░░  34.89%
+TypeScript      127h             █████░░░░░░░░░░░░░░░  25.69%
+Other           53h 48m          ██░░░░░░░░░░░░░░░░░░  10.88%
+Liquid          47h 58m          ██░░░░░░░░░░░░░░░░░░   9.70%
+JavaScript      43h 46m          ██░░░░░░░░░░░░░░░░░░   8.85%
 ```
 
 💼 **Projects:**
 ```text
-geonavi1        152 hrs 29 mins  ██████░░░░░░░░░░░░░░  30.12%
-Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░   9.75%
-rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   9.56%
-frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   6.74%
-GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░░░░░░   3.74%
+geonavi1        152 hrs 34 mins  ██████░░░░░░░░░░░░░░  29.83%
+Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░   9.65%
+rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   9.47%
+frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   6.67%
+GenAiVideo      18 hrs 55 mins   █░░░░░░░░░░░░░░░░░░░   3.70%
 ```
 
-**Total:** 489h 20m 12s
+**Total:** 494h 25m 8s
 <!-- HACKATIME:END -->
 
 </div>
