@@ -69,11 +69,11 @@ JavaScript      44h 22m          ██░░░░░░░░░░░░░�
 
 💼 **Projects:**
 ```text
-geonavi1        156 hrs 16 mins  █████░░░░░░░░░░░░░░░  25.89%
-Optivators      102 hrs 40 mins  ███░░░░░░░░░░░░░░░░░  17.01%
-Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░   8.18%
-rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   8.02%
-frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   5.65%
+geonavi1        152 hrs 54 mins  █████░░░░░░░░░░░░░░░  25.47%
+Optivators      102 hrs 40 mins  ███░░░░░░░░░░░░░░░░░  17.10%
+Niora-Fashion   49 hrs 21 mins   ██░░░░░░░░░░░░░░░░░░   8.22%
+rfid-marathon   48 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   8.06%
+frontend        34 hrs 6 mins    █░░░░░░░░░░░░░░░░░░░   5.68%
 ```
 
 **Total:** 586h 48m 20s
