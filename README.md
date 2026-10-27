@@ -69,9 +69,9 @@ Liquid          61h 24m          █░░░░░░░░░░░░░░�
 
 💼 **Projects:**
 ```text
-Optivators      300 hrs 28 mins  █████████░░░░░░░░░░░  44.68%
-Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.79%
-rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.23%
+Optivators      300 hrs 28 mins  █████████░░░░░░░░░░░  44.71%
+Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.80%
+rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.24%
 frontend        34 hrs 25 mins   █░░░░░░░░░░░░░░░░░░░   5.12%
 backend         18 hrs 30 mins   █░░░░░░░░░░░░░░░░░░░   2.75%
 ```
