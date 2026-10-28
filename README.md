@@ -60,23 +60,23 @@
 
 💾 **Languages:**
 ```text
-Python          315h 46m         ████████░░░░░░░░░░░░  38.10%
-TypeScript      179h 5m          ████░░░░░░░░░░░░░░░░  21.61%
-Other           154h 17m         ████░░░░░░░░░░░░░░░░  18.62%
-Markdown        100h 24m         ██░░░░░░░░░░░░░░░░░░  12.12%
-Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   7.41%
+Python          317h 5m          ████████░░░░░░░░░░░░  38.06%
+TypeScript      179h 37m         ████░░░░░░░░░░░░░░░░  21.56%
+Other           155h 56m         ████░░░░░░░░░░░░░░░░  18.72%
+Markdown        101h 41m         ██░░░░░░░░░░░░░░░░░░  12.21%
+Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   7.37%
 ```
 
 💼 **Projects:**
 ```text
-Optivators      300 hrs 28 mins  █████████░░░░░░░░░░░  44.71%
-Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.80%
-rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.24%
-frontend        34 hrs 25 mins   █░░░░░░░░░░░░░░░░░░░   5.12%
-backend         18 hrs 30 mins   █░░░░░░░░░░░░░░░░░░░   2.75%
+Optivators      304 hrs 30 mins  █████████░░░░░░░░░░░  45.17%
+Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.77%
+rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.21%
+frontend        34 hrs 25 mins   █░░░░░░░░░░░░░░░░░░░   5.11%
+backend         18 hrs 30 mins   █░░░░░░░░░░░░░░░░░░░   2.74%
 ```
 
-**Total:** 828h 43m 7s
+**Total:** 833h 2m 26s
 <!-- HACKATIME:END -->
 
 </div>
