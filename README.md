@@ -60,23 +60,23 @@
 
 💾 **Languages:**
 ```text
-Python          353h 28m         ████████░░░░░░░░░░░░  38.59%
-TypeScript      190h 9m          ████░░░░░░░░░░░░░░░░  20.76%
-Other           184h 52m         ████░░░░░░░░░░░░░░░░  20.18%
-Markdown        115h 37m         ███░░░░░░░░░░░░░░░░░  12.62%
-Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   6.70%
+Python          354h 37m         ████████░░░░░░░░░░░░  38.60%
+TypeScript      190h 27m         ████░░░░░░░░░░░░░░░░  20.73%
+Other           186h 32m         ████░░░░░░░░░░░░░░░░  20.30%
+Markdown        115h 41m         ███░░░░░░░░░░░░░░░░░  12.59%
+Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   6.68%
 ```
 
 💼 **Projects:**
 ```text
-Optivators      375 hrs 57 mins  ███████████░░░░░░░░░  56.68%
-Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.90%
-rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.33%
+Optivators      377 hrs 9 mins   ███████████░░░░░░░░░  56.69%
+Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.88%
+rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.31%
 geonavi1        17 hrs 20 mins   █░░░░░░░░░░░░░░░░░░░   2.61%
-Agent-Venom     17 hrs 3 mins    █░░░░░░░░░░░░░░░░░░░   2.57%
+Agent-Venom     17 hrs 3 mins    █░░░░░░░░░░░░░░░░░░░   2.56%
 ```
 
-**Total:** 915h 56m 28s
+**Total:** 918h 44m 49s
 <!-- HACKATIME:END -->
 
 </div>
