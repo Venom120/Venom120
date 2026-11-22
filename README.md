@@ -16,7 +16,7 @@
 ---
 
 ### 🩸 About Me
-- 💻 **Product Associate Intern** at [Optus Ed-Tech Solutions](https://www.optusedu.com/) and B.Tech CSE student at GGITS.
+- 💻 **Product Associate Intern** at [Optus Ed-Tech Solutions](https://www.optusedu.com/) and graduated from GGITS, Jabalpur with B.Tech degree in Computer Science.
 - 🚀 Focused heavily on **Backend Development**, **API Integrations**, and **Cloud Deployments (Docker, Cloudflare, Nginx)**.
 - ⚡ Experienced in building end-to-end **Full-Stack** solutions utilizing **React** and **Python FastAPI**.
 - 🧠 Deeply interested in expanding my knowledge in AI/ML through fine-tuning models and exploring Langchain.
