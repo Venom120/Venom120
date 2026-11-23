@@ -60,23 +60,23 @@
 
 💾 **Languages:**
 ```text
-Python          356h 6m          ████████░░░░░░░░░░░░  38.67%
-TypeScript      190h 27m         ████░░░░░░░░░░░░░░░░  20.68%
-Other           187h 17m         ████░░░░░░░░░░░░░░░░  20.34%
-Markdown        115h 51m         ███░░░░░░░░░░░░░░░░░  12.58%
-Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   6.67%
+Python          359h 35m         ████████░░░░░░░░░░░░  38.75%
+TypeScript      191h 56m         ████░░░░░░░░░░░░░░░░  20.68%
+Other           189h 47m         ████░░░░░░░░░░░░░░░░  20.45%
+Markdown        116h 12m         ███░░░░░░░░░░░░░░░░░  12.52%
+Liquid          61h 24m          █░░░░░░░░░░░░░░░░░░░   6.62%
 ```
 
 💼 **Projects:**
 ```text
-Optivators      377 hrs 19 mins  ███████████░░░░░░░░░  56.72%
-Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.88%
-rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.31%
-geonavi1        17 hrs 20 mins   █░░░░░░░░░░░░░░░░░░░   2.61%
-Agent-Venom     17 hrs 3 mins    █░░░░░░░░░░░░░░░░░░░   2.56%
+Optivators      382 hrs 31 mins  ███████████░░░░░░░░░  57.05%
+Niora-Fashion   52 hrs 24 mins   ██░░░░░░░░░░░░░░░░░░   7.82%
+rfid-marathon   48 hrs 38 mins   █░░░░░░░░░░░░░░░░░░░   7.25%
+geonavi1        17 hrs 18 mins   █░░░░░░░░░░░░░░░░░░░   2.58%
+Agent-Venom     17 hrs 3 mins    █░░░░░░░░░░░░░░░░░░░   2.54%
 ```
 
-**Total:** 920h 50m 21s
+**Total:** 928h 1m 10s
 <!-- HACKATIME:END -->
 
 </div>
